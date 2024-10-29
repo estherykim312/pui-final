@@ -210,27 +210,30 @@ How would you use Generative AI responsibly?
 
 ### *Idea 1*
 
-![title for sketch1](images/sketch1.png)
+![Portfolio](images/portfolio.png)
 
-Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
-
+My first idea is a unique portfolio. In order to make it visually engaging and interactive, I will incorporate elements such as delightful microinteractions, from scroll trigger effects, image transitions, hover elements to animations that reveal additional details about key moments. I will also include considerations of accessibility, such as distinguishable color contrast. In order to demonstrate my skills in usability, I plan on devising a strong layout and balance of interactive and accessible moments so that it tells a cohesive and personal story about me as a designer and my career.
 * What is the basic idea of your final project? (1-2 sentences)  
 * How do you plan to make your design interactive and engaging?  
 * How do you plan to make your design accessible?  
 * What information do you specifically want to convey and include on your website?
 
 ### *Idea 2*
+![Skincare Quiz](images/skincare.png)
 
-…
+My second idea revolves around creating a quiz that receives feedback from the user about their skincare needs and lifestyle, in order to generate a list of reccomendations of kbeauty products they need to purchase. It is essentially an e-commerce site, but provides more than simple e-commerce functions. I planned on using meaningful pre-loaded and labeled data through careful planning. In order to make it interactive and engaging, I plan on using delightful microinteractions and animations that guide the user through an interactive journey of their ideal skincare routine throughout the day and week. 
 
 ### *Idea 3*
+![Sustainability Forum](images/sustainability.png)
 
-…
+For my third idea, I imagined a sustainability forum that acts as both a blog and an e-commerce site for all things related to sustainable living. By gathering meaningful pre-loaded and labeled data, I planned on devising a curated feed, interactive wishlist and product recommendations and top picks to hit both angles of a personalized customer experience and e-commerce. …
 
 ## Feedback Summary
 
 Summarize all the critiques you received during the lab session (\~300 words). 
+As per feedback during the lab session, I realized the need to prioritize the user experience and technical feasability more than an idealistic business perspective, as it is more effective to focus on doing one thing well rather than trying to cover too much. There was also feedback around thinking about meaningful interactions for my portfolio, which highlighted the need, again, of prioritizing what I can do best for the user experience while showcasing my skills in usability.
 
 ## Feedback Digestion
 
 Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+I decided to take the critique regarding Idea 1, around thinking about more additional design elements that both make my website unique by providing interactions beyond simple navigation, and demonstrate my skills in usability. It was important in shaping my decision to focus on the first idea rather than the second or third because it made me think more deeply around the technical feasability. Rather than getting caught up in my ambitious "business perspective" goals, I think it would be better to direct my attention towards the main goal of this project, which is to showcase my skills in usability- aka depth vs breadth. Therefore, to build a portfolio that adequately shows a unique perspective on meaningful interactions while balancing strong usability, I have been thinking about researching more design elements and how to execute them in a way that aligns with accessibility WCAG standards.

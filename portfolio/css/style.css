@@ -47,9 +47,24 @@ h1{
   font-family: Georgia, serif;
   font-size: 43px;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 p{
   color: #525252;
 }
+
+.project-container{
+  display: flex; 
+  flex-direction: column; /*vertical rows*/
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.project-row{
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 40px;
+}
+

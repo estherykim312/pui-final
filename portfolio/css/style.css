@@ -55,14 +55,11 @@ p{
 }
 
 .project-container{
-  max-width: 1200px;
-  display: flex; 
+  display: flex;
   flex-direction: column; /*vertical rows*/
   margin: 0 auto;
   justify-content: center;
   margin-top: 80px;
-  padding: 0 56px; 
-
 }
 
 .project-row{
@@ -94,7 +91,7 @@ p{
   color: #000000;
 }
 
-.case-study p .project-detail{
+.project-card p .project-detail{
   text-align: left;
   text-decoration: none;
   color: #525252;

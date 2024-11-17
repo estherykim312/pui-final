@@ -65,7 +65,7 @@ p{
 .project-row{
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 50px;
   margin-bottom: 40px;
 }
 
@@ -96,7 +96,7 @@ p{
   text-decoration: none;
   color: #525252;
   font-weight: 100; /*thin*/
-  font-size: 15px;
+  font-size: 17px;
 }
 
 

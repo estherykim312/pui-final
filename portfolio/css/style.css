@@ -1,3 +1,8 @@
+.everything-body{ /*trying to align everything together*/
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
 body{
     font-family: Arial, sans-serif;
     font-size: 23px;
@@ -10,7 +15,7 @@ body{
 .navbar{
   display: flex;
   justify-content: flex-start; /*aligns left */
-  padding: 0 60px;
+  padding: 0; /*60px; trying out removing navbar specific padding*/
   margin-top: 30px;
 }
 
@@ -33,7 +38,8 @@ body{
 
 .header-container{
   max-width: 715px;
-  padding: 0 60px;
+  padding: 0; /* 60px;trying out removing padding specific*/
+  margin-top: 60px;
 }
 
 

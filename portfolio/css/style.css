@@ -6,18 +6,11 @@ body{
     padding: 0 60px;
   }
 
-h1{
-  font-family: Georgia, serif;
-  font-size: 34px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
 
 .navbar{
   display: flex;
   justify-content: flex-start; /*aligns left */
   padding: 0 60px;
-  margin: 0 auto;
 }
 
 
@@ -38,9 +31,16 @@ h1{
 
 
 .header-container{
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 750px;
   padding: 0 60px;
+}
+
+
+h1{
+  font-family: Georgia, serif;
+  font-size: 37px;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 p{

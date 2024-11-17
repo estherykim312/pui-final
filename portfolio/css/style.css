@@ -1,13 +1,22 @@
 body{
     font-family: Arial, sans-serif;
     font-size: 23px;
-    color:  #000000;
+    color: #000000;
     background-color: #F8F7F2;
+    padding: 0 40px;
   }
 
 h1{
   font-family: Georgia, serif;
   font-size: 34px;
+  font-weight: normal;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-start; /*aligns left */
+  padding: 0 40px;
+}
 }
 
 .nav-link{
@@ -23,4 +32,9 @@ h1{
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+
+.header-container{
+  max-width: 900px;
 }

@@ -70,20 +70,21 @@ p{
   display: flex;
   justify-content: center;
   gap: 50px;
+  max-width: 1200px; 
+  margin: 0 auto 40px;
+  padding: 0 56px;
   margin-bottom: 40px;
 }
 
-
 .project-card{
   text-align:left;
-  margin: 20px; 
   width: 385px;
-  border-radius: 10px;
 }
 
 .project-image{
   width: 385px;
   height: 385px;
+  border-radius: 15px;
   /*margin: 10px 0;*/
   /*margin-right: 10px;*/
 }

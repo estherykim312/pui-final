@@ -10,6 +10,7 @@ h1{
   font-family: Georgia, serif;
   font-size: 34px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .navbar{
@@ -17,7 +18,7 @@ h1{
   justify-content: flex-start; /*aligns left */
   padding: 0 40px;
 }
-}
+
 
 .nav-link{
   text-decoration: none;
@@ -36,5 +37,6 @@ h1{
 
 
 .header-container{
-  max-width: 900px;
+  max-width: 700px;
+  padding: 0 40px;
 }

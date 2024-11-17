@@ -59,6 +59,7 @@ p{
   flex-direction: column; /*vertical rows*/
   justify-content: center;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .project-row{
@@ -72,14 +73,13 @@ p{
 .case-study{
   text-align:left;
   margin: 20px; 
-  width: 285px;
+  width: 385px;
 }
 
 .project-image{
-  width: 285px;
-  height: 285px;
+  width: 385px;
+  height: 385px;
   /*margin: 10px 0;*/
-  border: 2px solid black;
   /*margin-right: 10px;*/
 }
 

@@ -10,7 +10,16 @@ h1{
   font-size: 34px;
 }
 
-.navbar a {
-  color: #000000;
+.nav-link{
   text-decoration: none;
+  color: #525252;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.nav-link.active{
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

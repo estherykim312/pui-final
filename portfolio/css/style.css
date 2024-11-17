@@ -59,6 +59,7 @@ p{
   display: flex; 
   flex-direction: column; /*vertical rows*/
   margin: 0 auto;
+  justify-content: center;
   margin-top: 80px;
   padding: 0 56px; 
 

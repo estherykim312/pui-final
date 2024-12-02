@@ -7,7 +7,7 @@ gsap.from(".bar span", {
         start: "top 80%", // Start animation when .bar enters the viewport
         end: "top 50%", // End animation when .bar reaches this position
         scrub: true, // Smooth animation tied to scroll
-        markers: true, // Debugging markers
+        markers: false, // Debugging markers- i switch true to false to remove the markers
     },
     ease: "power2.inOut",
     duration: 1,
@@ -21,7 +21,7 @@ gsap.from(".bar abbr", {
         start: "top 80%",
         end: "top 50%",
         scrub: true,
-        markers: true, // Debugging markers
+        markers: false, 
     },
     ease: "power2.inOut",
     duration: 1,
@@ -92,7 +92,10 @@ const sliderWrapper = document.querySelector(".slider-wrapper");
 const markerWrapper = document.querySelector(".marker-wrapper");
 const activeSlide = document.querySelector(".active-slide");
 
-let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
+//1차: let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;//
+//2차// 
+let maxScroll = sliderWrapper.scrollWidth - window.innerWidth;
+
 
 function lerp(start, end, factor) {
   return start + (end - start) * factor;

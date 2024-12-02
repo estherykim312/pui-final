@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  
-  <body>
+<meta charset="UTF-8">
+<title>Esther Kim's Portfolio- About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h1>Other Page</h1>
+<header>
+  <link rel="stylesheet" href="../css/style.css">
+</header>
 
-    <p>
-        Hello!
-    </p>
 
-  </body>
+<body>
+
+  <div class="everything-body">
+
+    <nav class="navbar">
+      <a class="nav-link" href="../index.html">WORK</a>
+      <a class="nav-link active" href="./about.html">ABOUT</a>
+    </nav>
+
+    <div class="header-container">
+      <h1>Design Heroes</h1>
+      <p> Here are a few of my inspirations that have shaped my perspective as a designer. They're not all digital. You'll find artists, architects, fashion and interior designers here too.</p>
+    </div>
+<!-- HORIZONTAL TIMELINE ANIMATION-->
+
+    <div>
+      <nav>
+          <div>Codegrid</div>
+          <div>One block at a time</div>
+        </div>
+        <div>Est 2017</div>
+      </nav>
+
+      <div class="marker-wrapper">
+        <div class="marker">
+          <div class="grab"></div>
+        </div>
+        <div class="active-slide">1/10</div>
+      </div>
+
+      <div class="slider">
+        <div class="slider-wrapper">
+          
+          <div class="slide">
+            <img src=".../assets/photos/01.jpg" alt="pierre-yovanovitch">
+          </div>
+          <div class="slide">
+            <img src="./photos/02.jpg" alt="le-corbusier">
+          </div>
+          <div class="slide">
+            <img src="./photos/03.jpg" alt="hedi-slimane">
+          </div>
+          <div class="slide">
+            <img src="./photos/04.jpg" alt="tracey-emin">
+          </div>
+          <div class="slide">
+            <img src="./photos/05.jpg" alt="donald-norman">
+          </div>
+          <div class="slide">
+            <img src="./photos/06.jpg" alt="celine">
+          </div>
+          <div class="slide">
+            <img src="./photos/07.jpg" alt="jun-itami">
+          </div>
+          <div class="slide">
+            <img src="./photos/08.jpg" alt="teo-yang">
+          </div>
+          <div class="slide">
+            <img src="./photos/09.jpg" alt="lucio-fontana">
+          </div>
+          <div class="slide">
+            <img src="./photos/10.jpg" alt="cy-twombly">
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- !!!SKILLS BAR ANIMATION!!!-->
+  </div>
+    <section>  <!-- ***represents section of the page: skillbar-->
+      <div class="wrap">  <!-- to group multiple "bar" components-->
+        <div class="bar"> <!-- represents each individual progress bar-->
+            <h3>Product Strategy <abbr>80%</abbr></h3>
+          <div class="thumb"><span></span>
+          </div>
+        </div>
+
+        <div class="bar"> <!-- represents each individual progress bar-->
+          <h3>User Research <abbr>60%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar"> <!-- represents each individual progress bar-->
+          <h3>Branding <abbr>70%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar"> <!-- represents each individual progress bar-->
+          <h3>Interaction Design <abbr>90%</abbr></h3>
+        <div class="thumb"><span></span></div>
+        </div>
+      </div>
+    </section>
+ 
+
+
+  <!-- GSAP LINK-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP SCROLL-TRIGGER FUNCTION LINK-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+
+gsap.from(".bar abbr", {
+    scrollTrigger: ".bar", 
+    left: 0,
+    ease: Power2.easeInOut,
+    duration: 3,
+    stagger: 0.1
+  });
+
+gsap.from(".bar abbr", {
+    scrollTrigger: ".bar", 
+    width: "0px",
+    ease: Power2.easeInOut,
+    duration: 3,
+    stagger: 0.1
+  });
+
+  </script>
+
+  <script src="js/random-element.js"> </script>
+
+
+
+</body>
+
 </html>

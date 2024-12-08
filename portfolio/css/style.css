@@ -1,10 +1,9 @@
 /*HOME */
 
-.everything-body{ /*trying to align everything together*/
-  /*max-width: 1200px;
-  padding: 0 56px;*/
-  width: 90%;
-  max-width: 1200px;
+.about-body{ /*trying to align everything together*/
+  /*originally max-width: 1200px;*/
+  width: 95%;
+  max-width: 1300px;
   margin: 0 auto;
   overflow: hidden;
   /*not doing width 100vw and height vh*/
@@ -15,9 +14,16 @@ body{
     font-size: 20px;
     color: #000000;
     background-color: #F8F7F2;
-    padding: 0 56px;
+    padding: 0 40px;
   }
 
+
+header{
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .navbar{
   display: flex;
@@ -31,20 +37,20 @@ body{
   text-decoration: none;
   color: #525252;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 .nav-link.active{
   text-decoration: none;
   color: black;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 5px;
 }
 
 
 .header-container{
-  max-width: 860px;
+  max-width: 800px;
   padding: 0; /* 60px;trying out removing padding specific*/
   margin-top: 40px;
 }
@@ -55,66 +61,11 @@ h1, h2{
   font-size: 43px;
   font-weight: normal;
   margin-bottom: 27px;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 p{
   color: #525252;
-}
-
-.project-container{
-  display: flex;
-  flex-direction: column; /*vertical rows*/
-  /*margin: 0 auto;*/
-  /*justify-content: center;*/
-  margin-top: 105px;
-  align-items: center;
-  max-width: 1200px;
-  padding: 0;
-
-}
-
-.project-row{
-  display: flex;
-  flex-wrap: wrap; /*wrap on mobile*/
-  justify-content: center; /*trying to center on mobile*/
-  gap: 10px;
-  width: 80%;
-  /*padding: 0;
-  margin: 0;*/
-}
-
-.project-card{
-  text-align:left;
-  width: 100%;
-  max-width: 385px;
-  margin: 0 auto;
-}
-
-.project-image{
-  width: 100%;
-  border-radius: 35px;
-  /*margin: 10px 0;*/
-  /*margin-right: 10px;*/
-}
-
-.project-title{
-  text-align: left;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-}
-
-.project-card p .project-detail{
-  text-align: left;
-  text-decoration: none;
-  color: #525252;
-  font-weight: 100; /*thin*/
-  font-size: 18px;
-  font-family: Georgia, serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  opacity: 0.4;
 }
 
 /*ABOUT ME PAGE: TIMELINE */
@@ -145,7 +96,7 @@ footer{
 
 .slider-wrapper{
   width: max-content;
-  padding-right: 300px; /*if not image cuts off*/
+  padding-right: 160px; /*if not image cuts off*/
   margin: 0;
   height: 100%;
   display: flex;
@@ -157,8 +108,8 @@ footer{
 }
 
 .slide{
-  width: 430px;
-  height: 430px;
+  width: 450px;
+  height: 450px;
   background: #DAD8CD;
   /*flex-shrink: 0; /*이것도 2차*/
 }
@@ -254,94 +205,123 @@ footer{
 }
 
 
-/*ABOUT ME PAGE: SKILLSET BAR ANIMATION */
-
-
-.wrap{
-  max-width: 60%;
-}
-
-section{
+/*HOME PAGE*/
+.accordion-container {
   display: flex; 
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-
-.bar{
-  color: black;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 250;
-  position: relative;
-  display: inline-block; /*this makes it one line*/
-  margin-bottom: 15px;
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
-
-.bar .thumb{ /*you can later rename to fill*/
-  position: relative;        /* Positioned relative to its parent (.bar) */
-  display: inline-block;     /* Makes it behave like a block inside inline content */
-  width: 100%;               /* Sets the width to 100% of its parent container (.bar) */
-  height: 10px;              /* Sets the vertical height of the progress bar */
-  background-color: #DAD8CD; /* Grey background color for the bar */
-  border-radius: 60px;       /* Rounds the corners of the bars */
-  margin-top: 20px;          /* Adds spacing above the bar */
-}
-
-.bar span{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: linear-gradient(to left, #90C8DE, #7EA0AD);
-  border-radius: 50px;
-}
-
-.bar:nth-child(1) span{
-  width: 80%;
-}
-.bar:nth-child(2) span{
-  width: 60%;
-}
-.bar:nth-child(3) span{
-  width: 70%;
-}
-.bar:nth-child(4) span{
+  gap: 20px;
   width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  align-items: flex-start;
 }
 
-.bar abbr {
-  width: 50px;
-  display: inline-block;
-  height: 35px;
-  border-radius: 50px;
-  text-align: center;
-  line-height: 35px;
-  position: absolute;
-  top: 58px; 
-  left: 0; 
-  margin-left: -5px; 
-  z-index: 1; 
-  background: linear-gradient(to left, #CFDCE1, #B1C6CE);
-  box-shadow: 0 5px 30px rgba(164, 176, 194, 0.5), 0 5px 30px rgba(182, 182, 162, 0.4);
+.explore-projects {
+  flex: 1; 
+  max-width: 300px; 
+  margin-top: 20px; 
 }
 
-.bar:nth-child(1) abbr{
-  left: 80%;
+.explore-projects h1 {
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  color: #525252;
 }
-.bar:nth-child(2) abbr{
-  left: 60%;
+
+.accordion {
+  flex: 2; 
 }
-.bar:nth-child(3) abbr{
-  left: 70%;
+
+.accordion-section {
+  border-bottom: 1px solid #ccc;
 }
-.bar:nth-child(4) abbr{
-  left: 90%;
+
+.accordion-header {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #EFEEB6;
+}
+
+.accordion-content {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+.accordion-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .accordion-container {
+    flex-direction: column; 
+  }
 }
 
 
+
+
+.project-container{
+  display: flex;
+  flex-direction: column; /*vertical rows*/
+  /*margin: 0 auto;*/
+  /*justify-content: center;*/
+  margin-top: 55px;
+  align-items: center;
+  padding: 0;
+
+}
+
+.project-row{
+  display: flex;
+  flex-wrap: wrap; /*wrap on mobile*/
+  justify-content: center; /*trying to center on mobile*/
+  gap: 10px;
+  width: 90%;
+  /*padding: 0;
+  margin: 0;*/
+}
+
+.project-card{
+  text-align:left;
+  width: 100%;
+  max-width: 285px;
+  margin: 0 auto;
+}
+
+.project-image{
+  width: 100%;
+  border-radius: 35px;
+  /*margin: 10px 0;*/
+  /*margin-right: 10px;*/
+}
+
+.project-title{
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+.project-card p .project-detail{
+  text-align: left;
+  text-decoration: none;
+  color: #525252;
+  font-weight: 100; /*thin*/
+  font-size: 18px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  opacity: 0.4;
+}

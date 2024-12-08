@@ -1,143 +1,82 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".bar span", {
-    width: "0%", // Start from 0 width
-    scrollTrigger: {
-        trigger: ".bar", // The element triggering the animation
-        start: "top 80%", // Start animation when .bar enters the viewport
-        end: "top 50%", // End animation when .bar reaches this position
-        scrub: true, // Smooth animation tied to scroll
-        markers: false, // Debugging markers- i switch true to false to remove the markers
-    },
-    ease: "power2.inOut",
-    duration: 1,
-    stagger: 0.1,
+  width: "0%", 
+  scrollTrigger: {
+    trigger: ".bar",
+    start: "top 80%",
+    end: "top 50%",
+    scrub: true, 
+  },
+  duration: 1,
+  ease: "power2.inOut",
 });
 
 gsap.from(".bar abbr", {
-    opacity: 0, // Start with invisible abbr
-    scrollTrigger: {
-        trigger: ".bar",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        markers: false, 
-    },
-    ease: "power2.inOut",
-    duration: 1,
-    stagger: 0.1,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: ".bar",
+    start: "top 80%",
+    end: "top 50%",
+    scrub: true,
+  },
+  duration: 1,
+  ease: "power2.inOut",
 });
 
-/* TIMELINE ANIMATION
-let target = 0;
-let current = 0;
-let ease = 0.07;
+let scrollTarget = 0;
+let currentScroll = 0;
+let scrollEase = 0.05;
 
 const slider = document.querySelector(".slider");
 const sliderWrapper = document.querySelector(".slider-wrapper");
-const markerWrapper = document.querySelector(".marker-wrapper");
-const activeSlide = document.querySelector(".active-slide");
+const marker = document.querySelector(".marker-wrapper");
+const activeSlideLabel = document.querySelector(".active-slide");
 
-let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
+if (sliderWrapper) {
+  let maxScroll = sliderWrapper.scrollWidth - window.innerWidth;
 
-function lerp(start, end, factor){
-    return start + (end - start) * factor;
-}
+  function smoothScroll(start, end, easing) {
+    return start + (end - start) * easing;
+  }
 
-function updateActiveSliderNumber(markerMove, markerMaxMove){
-    const partWidth = markerMaxMove / 10;
-    let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
-    currentPart = Math.min(10, currentPart);
-    activeSlide.textContent = `${currentPart}/10`;
-}
+  function updateSlideNumber(markerPosition, maxMarkerMove) {
+    const segmentWidth = maxMarkerMove / 10;
+    let activeSlide = Math.round((markerPosition - 70) / segmentWidth) + 1;
+    activeSlide = Math.min(10, activeSlide); 
+    activeSlideLabel.textContent = `${activeSlide}/10`; 
+  }
 
-function update(){
-    current = lerp(current, target, ease)
+  function updateAnimation() {
+    currentScroll = smoothScroll(currentScroll, scrollTarget, scrollEase);
 
     gsap.set(".slider-wrapper", {
-        x: -current,
+      x: -currentScroll, 
     });
 
-    let moveRatio = current / maxScroll;
-    let markerMaxMove = window.innerWidth - markerWrapper.offsetWidth - 170;
-    let markerMove = 70 + moveRatio * markerMaxMove;
+    let scrollRatio = currentScroll / maxScroll;
+    let maxMarkerMove = window.innerWidth - marker.offsetWidth - 170;
+    let markerPosition = 70 + scrollRatio * maxMarkerMove;
+
     gsap.set(".marker-wrapper", {
-        x: markerMove,
-    })
+      x: markerPosition,
+    });
 
-    updateActiveSliderNumber(markerMove, markerMaxMove);
+    updateSlideNumber(markerPosition, maxMarkerMove);
 
-    requestAnimationFrame(update);
-}
-window.addEventListener("resize", () => {
-    maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
-});
+    requestAnimationFrame(updateAnimation); 
+  }
 
-window.addEventListener("wheel", (e) => {
-    target += e.deltaY;
-
-    target = Math.max(0, target);
-    target = Math.min(maxScroll, target);
-})
-update(); */
-
-
-
-let target = 0;
-let current = 0;
-let ease = 0.05;
-
-const slider = document.querySelector(".slider");
-const sliderWrapper = document.querySelector(".slider-wrapper");
-const markerWrapper = document.querySelector(".marker-wrapper");
-const activeSlide = document.querySelector(".active-slide");
-
-//1차: let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;//
-//2차// 
-let maxScroll = sliderWrapper.scrollWidth - window.innerWidth;
-
-
-function lerp(start, end, factor) {
-  return start + (end - start) * factor;
-}
-
-function updateActiveSliderNumber(markerMove, markerMaxMove) {
-  const partWidth = markerMaxMove / 10;
-  let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
-  currentPart = Math.min(10, currentPart);
-  activeSlide.textContent = `${currentPart}/10`;
-}
-
-function update() {
-  current = lerp(current, target, ease);
-  console.log("current:", current, "target:", target); // Debugging values
-
-  gsap.set(".slider-wrapper", {
-    x: -current,
+  window.addEventListener("resize", () => {
+    maxScroll = sliderWrapper.scrollWidth - window.innerWidth;
   });
 
-  let moveRatio = current / maxScroll;
-  let markerMaxMove = window.innerWidth - markerWrapper.offsetWidth - 170;
-  let markerMove = 70 + moveRatio * markerMaxMove;
-
-  gsap.set(".marker-wrapper", {
-    x: markerMove,
+  window.addEventListener("wheel", (event) => {
+    scrollTarget += event.deltaY * 0.5; 
+    scrollTarget = Math.max(0, Math.min(scrollTarget, maxScroll)); 
   });
 
-  updateActiveSliderNumber(markerMove, markerMaxMove);
-
-  requestAnimationFrame(update);
+  updateAnimation();
+} else {
+  console.error("Slider wrapper not found!");
 }
-
-window.addEventListener("resize", () => {
-  maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
-  console.log("maxScroll (resize):", maxScroll); // Debug resize
-});
-
-window.addEventListener("wheel", (e) => {
-  target += e.deltaY * 0.5; // Adjust scroll speed
-  target = Math.max(0, Math.min(target, maxScroll));
-  console.log("target (wheel):", target); // Debug wheel events
-});
-
-update();

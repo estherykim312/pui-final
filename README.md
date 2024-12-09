@@ -1,3 +1,6 @@
+Deployed website: https://estherykim312.github.io/pui-final/portfolio/
+Repository link: https://github.com/estherykim312/pui-final
+
 # **FP4 \- Final Project Writeup**
 
 Feel free to refer to this Markdown Cheat Sheet to make your writeup more organized, and you can preview your markdown file in VSCode Markdown editing with Visual Studio Code.

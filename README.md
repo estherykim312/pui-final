@@ -2,46 +2,49 @@
 
 Feel free to refer to this Markdown Cheat Sheet to make your writeup more organized, and you can preview your markdown file in VSCode Markdown editing with Visual Studio Code.
 
-**Part 1: Website Description
+**Part 1: Website Description:
 
-Describe your website (300 words).
+My website serves as my UX Design portfolio, showcasing my work and identity as a designer. I aim to use it for my job search during the latter half of this program. The primary audience includes job recruiters and hiring managers who have limited time to browse websites yet seek portfolios that are eye-catching, unique, and memorable. The information I want to convey is that I am an interdisciplinary designer with a wide breadth of experiences and interests that make me a strong and distinctive UX Designer.
+Unlike traditional UX portfolios, my website goes beyond the standard case studies and about pages. It highlights not only my UX Design, UX Research, and Product Strategy skills but also showcases my background in Interior and Fashion Design. It will certainly allow me to stand out in a saturated job market full of generic UX portfolios. By including this broader range of content, my portfolio offers a comprehensive picture of who I am as a designer and what I bring to the table. This approach ensures that my work stands out and creates opportunities for connection, as visitors can relate to and engage with my inspirations and aesthetic.
+The site is engaging because I’ve incorporated interactions that invite users to explore. Key sections require clicking on specific areas, revealing deeper insights into my identity as a designer. For example, my “About” page is more than a description—it features design inspirations that reflect my unique perspective. These interactions encourage curiosity and provide an enjoyable browsing experience while helping users gain a better understanding of who I am.
+Ultimately, my portfolio bridges traditional UX content with personal, creative elements that reflect my interdisciplinary background, inviting my target audience to see me not just as a UX Designer but as a multifaceted creative professional. This combination makes my portfolio both engaging and memorable.
 
-What is the purpose of your website?
-Who is the target audience?
-What information do you convey with your website?
-How is it interesting and engaging?
 
-**Part 2: User Interaction
+**Part 2: User Interaction:
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-Click on the accordian. The cursor changing to a pointer indicates it's clickable.
+To explore my case studies by design type, the user interacts with an accordion interface. They are first greeted with 5 categories describing my different skillsets as an interdisciplinary designer. As they hover over the accordion, the hovered section subtly turns yellow, signaling interactivity, and the cursor changes to a pointer to indicate it’s clickable. Upon clicking a section, a high-level description of my background in that design field is revealed below, along with a dynamic display of relevant case studies. Users can then click on any case study to dive deeper into the details. The accordion dynamically adjusts, ensuring only the active section is expanded while maintaining a clean, focused layout. This interaction makes it easy and intuitive to navigate my diverse skill set and portfolio.
 
-Interaction type. Click on X on page Y / scroll on page X, etc.
+On my About Page, the user can explore my design inspirations through an interactive timeline. A jumping arrow signals that they should begin scrolling down, guiding their attention intuitively. As they scroll, they are delighted to discover that the timeline transitions horizontally, revealing a curated selection of photos that represent my design influences. Each image reacts to the user's curiosity—hovering over a photo reveals the name of the designer, adding an interactive layer that invites further exploration. This playful and engaging experience not only communicates my inspirations but also reflects my approach as a designer: thoughtful, user-centered, and visually captivating.
+
 
 **Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-Name of tool1
-Why did you choose to use it over other alternatives? (2 sentences max)
-How you used it? (2 sentences max)
-What does it add to your website? (2 sentences max)
-Name of tool2
+Name of tool1: GSAP (GreenSock Animation Platform) JavaScript Library
+Why did you choose to use it over other alternatives? (2 sentences max): I chose GSAP because it allows for visually stunning animations and interactions with extensive customization options. Additionally, I was inspired to use it as it’s supported by Webflow, a platform I’m interested in exploring for future projects.
+How you used it? (2 sentences max): I used GSAP to create smooth animations, such as dynamic transitions for elements like the horizontal timeline. These animations enhance the interactivity and visual appeal of my website.
+What does it add to your website? (2 sentences max): GSAP adds ean engaging interaction (user engaging with the timeline eg. scrolling and hovering triggering the name of designer) as well as visual feedback animation regarding the status # of the photo the user is scrolling at (from photo 1 to 10).
+
 
 **Part 4: Design Iteration
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
+I iterated on my prototype based on insights from usability testing and feedback from my TA. Usability testing revealed that certain aspects of my original timeline design felt unnecessary and hindered usability, with users expressing frustration over too many clicks. To address this, I streamlined the timeline by making it more visually engaging and providing instant feedback, such as implementing a status tracker and replacing user clicks with hover interactions to reduce friction. On the Home Page, my TA’s feedback about incorporating thoughtful interactions inspired me to refocus on my primary goal: showcasing the breadth of my multifaceted design career. I aimed to ensure that users immediately understand my five distinct areas of design expertise upon landing on the page. These updates reflect my commitment to creating a portfolio that is both consistent in its message and seamless in its user experience.
 **Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+
+Some challenges I faced in implementing my website included designing interactions that were both meaningful and aligned with my portfolio's purpose, rather than adding features just for the sake of "more." I focused on creating thoughtful, intentional interactions that enhanced the user experience and reinforced my goals, ensuring every element served a purpose in showcasing my work effectively and authentically.
 
 **Part 6: Generative AI Use and Reflection
 
 Describe how you used Generative AI tools to create this final project (fill in the following information, write ~500 words in total).
 
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
+I used ChatGPT as a supportive tool in the early stages of my projects to clarify concepts and explore implementation options. For instance, I used it to learn whether specific design elements, such as using “SF Pro” as a font, were feasible and accessible for my project. This helped me better plan my development process. My collaboration with ChatGPT focused on  addressing technical questions during the initial stages of my project. Because it’s my first time navigating how to program a design I made in Figma, I supplemented the online research I did with prompts on ChatGPT to better understand how to evaluate my design from a technical standpoint. While I authored the project components, I occasionally referred to AI-generated suggestions for troubleshooting or refining implementation details. For example, ChatGPT provided suggestions for structuring CSS animations, but I evaluated and modified these ideas to fit the scope of my design and coding style. By critically assessing the AI's suggestions, I ensured that the final design aligned with my goals while maintaining originality in my execution. Using ChatGPT helped me understand specific programming challenges in a digestible way, which allowed me to focus on creative design decisions. However, I found that AI’s suggestions always failed to generate a response that aligned with not only the project’s goals but also my vision for my portfolio, especially when addressing more nuanced design or usability considerations. I don’t think it can teach skills, which is why in some ways using GenAI makes it actually more difficult to program. This required me to critically evaluate the outputs and adapt them to fit the context of my work. Overall, ChatGPT made the technical aspects of the project more approachable, but it also reinforced the importance of balancing AI support with my own problem-solving and creative input.
 
 Usage Experiences by Project Aspects
 
@@ -49,45 +52,48 @@ Feel free to edit the column _ (other?) or add more columns if there's any other
 
 For the following aspects of your project, edit the corresponding table cell to answer:
 
-Usage: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
+Usage: Whether you used / did not use this tool for the aspect. Enter [Yes]
 Productivity: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
-Tool Name	Ratings	design	plan	write code	debug	_ (other?)
-Tool1	Usage	Yes/No	Yes/No	Yes/No	Yes/No	Yes/No
-Tool1	Productivity	1~7	1~7	1~7	1~7	1~7
-Tool2	Usage	Yes/No	Yes/No	Yes/No	Yes/No	Yes/No
-Tool2	Productivity	1~7	1~7	1~7	1~7	1~7
-Usage Reflection
+Tool Name: ChatGPT	
+Ratings	
+Design: Yes 3
+plan: Yes 2
+Write code: No 1
+Debug: Yes 5
 
-Impact on your design and plan
-It matched my expectations and plan in FP2 in that … For example,
-Tool1:
-Tool2:
-It did not match my expectations and plan in FP2 in that … For example,
-Tool1:
-Tool2:
+Usage Reflection:
+
+Impact on your design and plan:
+It matched my expectations and plan in FP2 in that it helped clarify technical questions early on. For example, ChatGPT guided me on how to evaluate whether certain design elements, like fonts or animations, were technically feasible, which shaped my initial planning.
+
+It did not match my expectations and plan in FP2 in that its suggestions often needed further refinement to fit my unique design goals. For example, while ChatGPT proposed some animation structures, they lacked usability considerations and required significant adjustment on my part to align with my user experience vision.
+
 GenAI tool did/did not influence my final design and implementation plan because … For example,
-Tool1:
-Tool2:
-Use patterns
-I accepted the generations when … For example,
-Tool1: this tool once suggested … and I adjusted my design according to the suggestion because …
-Tool2:
-I critiqued/evaluated the generated suggestions by … For example,
-Tool1: this tool once suggested … but I modified/rejected the suggestion because …
-Tool2:
+
+
+Use patterns:
+I accepted the generations when they provided solutions to debugging. 
+
+ChatGPT: this tool once suggested … but I modified/rejected the suggestion because … For example, ChatGPT once suggested adding multiple hover effects to my timeline but I rejected this because my users in my testing found it distracting. Instead, I simplified the hover interaction to focus on clrity and usabilitiy.
+
+
 Pros and cons of using GenAI tools
-Pros
-Tool1:
-Tool2:
-Cons
-Tool1:
-Tool2:
+Pros: helps with debugging and understanding technical feasibilitiy in a digestible way, especially in the beginning stages of a project.
+
+Cons: Suggestions lack nuance in terms of usability and alignment with my needs and goals, as well as demanding more time to understand their approach to generating code alternatives.
+
 Usage Log
+
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
 ChatGPT / Gemini: share the anonymous link to all of your chat histories relevant to this project
 GitHub Copilot (VSCode): export chat histories relevant to this project.
+
+![ChatGPT screenshots](images/chatgpt-1.png)
+![ChatGPT screenshots](images/chatgpt-2.png)
+![Unable to share link screenshot](images/chatgpt-screenshot.png)
+
 
 
 # **FP3 \- Final project check-in**

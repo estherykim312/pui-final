@@ -278,24 +278,22 @@ h2{
 }
 
 .arrow-container {
-  margin-top: 10px;
   display: flex;
-  align-items: center; /* Center vertically */
-  height: 100px; /* Adjust height of the container */
+  align-items: center; 
+  height: 50px;
 }
 
 .arrow {
-  font-size: 24px; /* Size of the arrow */
-  animation: jump 1s infinite; /* Call the animation */
+  font-size: 30px; 
+  animation: jump 1s infinite; 
 }
 
-/* Animation for jumping */
 @keyframes jump {
   0%, 100% {
-    transform: translateY(0); /* Default position */
+    transform: translateY(0); 
   }
   50% {
-    transform: translateY(-10px); /* Move up by 10px */
+    transform: translateY(-20px);
   }
 }
 
@@ -359,9 +357,9 @@ h2{
 }
 
 .project-placeholder {
-  width: 100vw; /* Make the image span the full viewport width */
-  height: 100vh; /* Make the image span the full viewport height */
-  object-fit: cover; /* Ensure the image fills the area while maintaining aspect ratio */
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
   display: block;
   margin: 0 auto;
 }
